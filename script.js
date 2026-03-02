@@ -10,7 +10,7 @@ async function searchCountry(countryName) {
         // Show loading spinner
         spinner.classList.remove('hidden');
         // Fetch country data
-        const response = await fetch(`https://restcountries.com/v3.1/name/${countryName}`);
+        const response = await fetch(`https://restcountries.com/v3.1/name/${countryName}?fullText=true`);
         
         if(!response.ok){
             throw new Error('Could not find country');
@@ -50,8 +50,11 @@ async function searchCountry(countryName) {
         
     } catch (error) {
         // Show error message
+        console.error(error);
+        errorMessage.textContent = error.message;
     } finally {
         // Hide loading spinner
+        spinner.classList.add('hidden');
     }
 }
 
