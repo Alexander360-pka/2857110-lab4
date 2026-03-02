@@ -1,0 +1,40 @@
+.spinner {
+    width: 40px;
+    height: 40px;
+    border-style: solid;
+    border-color: gold;
+    background-color: blanchedalmond;
+    animation: spin 1s linear infinite; /* Required */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.country-card{
+    background-color: aqua;
+    border-width: 8px;
+    border-style: solid;
+    border-color:greenyellow;
+    padding: 20px;
+}
+
+.border-grid {
+    display: flex;
+    flex-direction: column;
+    background-color:hotpink;
+    border-width: 8px;
+    border-style: solid;
+    border-color:deepskyblue;
+    padding: 20px;
+}
+
+.error {
+    color: red;
+    background-color: blue;
+}
+
+.hidden {
+    display: none;
+}
