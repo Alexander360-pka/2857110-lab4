@@ -50,13 +50,10 @@ async function searchCountry(countryName) {
         
     } catch (error) {
         // Show error message
-        console.error(error);
-        errorMessage.textContent = error.message;
     } finally {
         // Hide loading spinner
-        spinner.classList.add('hidden');
     }
-}spinner.classList.add("hidden");
+}
 
 // Event listeners
 document.getElementById('search-btn').addEventListener('click', () => {
