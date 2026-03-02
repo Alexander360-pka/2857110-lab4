@@ -22,7 +22,7 @@
 
 .border-grid {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color:hotpink;
     border-width: 8px;
     border-style: solid;
